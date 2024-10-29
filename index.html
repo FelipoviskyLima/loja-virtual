@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header da Loja -->
+    <header>
+        <h1>Minha Loja Virtual</h1>
+        <nav>
+            <a href="#sobre">Sobre a Loja</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#carrinho">Carrinho</a>
+        </nav>
+    </header>
+
+<!-- Seção Sobre a Loja -->
+<section id="sobre" class="sobre-a-loja">
+    <div class="sobre-imagem">
+        <img src="./img/shop640.png" alt="Imagem da Loja">
+    </div>
+
+    <div class="sobre-texto">
+        <h2>Sobre a Loja</h2>
+        <p>Bem-vindo à nossa Loja Virtual! Fundada com a missão de oferecer produtos de alta qualidade e acessíveis, nossa loja é dedicada a proporcionar uma experiência de compra única e agradável. Trabalhamos com fornecedores de confiança e produtos criteriosamente selecionados, sempre priorizando a satisfação e o bem-estar dos nossos clientes.</p>
+    </div>
+</section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Produtos</h2>
+        <div class="lista-produtos">
+            <div class="produto">
+                <img src="./img/shoes-1_640.jpg" alt="Tênis leve e confortável, perfeito para treinos e caminhadas">
+                <h3>Produto 1</h3>
+                <p>Leve e confortável, perfeito para treinos e caminhadas.</p>
+                <p>Preço: R$ 49,99</p>
+                <button onclick="adicionarAoCarrinho('Produto 1', 49.99)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./img/shoes-2_640.jpg" alt="Tênis resistente e elegante, para aventuras e uso diário">
+                <h3>Produto 2</h3>
+                <p>Resistente e elegante, para aventuras e uso diário.</p>
+                <p>Preço: R$ 79,99</p>
+                <button onclick="adicionarAoCarrinho('Produto 2', 79.99)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./img/shoes-3_640.jpg" alt="Tênis com amortecimento e durabilidade para alta performance">
+                <h3>Produto 3</h3>
+                <p>Amortecimento e durabilidade para alta performance.</p>
+                <p>Preço: R$ 99,99</p>
+                <button onclick="adicionarAoCarrinho('Produto 3', 99.99)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./img/shoes-4_640.jpg" alt="Tênis estiloso e prático, ideal para o dia a dia">
+                <h3>Produto 4</h3>
+                <p>Estiloso e prático, ideal para o dia a dia.</p>
+                <p>Preço: R$ 59,99</p>
+                <button onclick="adicionarAoCarrinho('Produto 4', 59.99)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Carrinho -->
+    <section id="carrinho" class="carrinho">
+        <h2>Seu Carrinho</h2>
+        <div id="carrinho-itens"></div>
+        <div class="carrinho-total">
+            <span>Total:</span>
+            <span id="total-preco">R$ 0,00</span>
+        </div>
+        <button class="carrinho-button">Finalizar Compra</button>
+    </section>
+</body>
+</html>
